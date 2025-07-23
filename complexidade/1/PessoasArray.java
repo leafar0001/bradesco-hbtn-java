@@ -17,7 +17,6 @@ public class PessoasArray {
         this.nomes = nomes;
     }
 
-    // implementar o método de buscaLinear com tratamento de exceção
     public void buscaLinear(String nome){
         if (nome == null) {
             throw new IllegalArgumentException("O nome fornecido é nulo.");
