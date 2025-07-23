@@ -31,9 +31,6 @@ System.out.println("Procurando pelo nome: \"" + nome + "\"");
                 encontrado = true;            }
 	
         }
-if (!encontrado) {
-            throw new IllegalArgumentException("Nome \"" + nome + "\" não encontrado na lista.");
-        }
     }
 }
 //if \(nomes\[i\] == \w+\)
