@@ -32,7 +32,7 @@ public class Pedido {
 
             String tipo = (p instanceof Livro) ? "Livro" : (p instanceof Dvd ? "Dvd" : "Produto");
             System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
-                    tipo, p.titulo, preco, qtd, totalItem);
+                    tipo, p.getTitulo(), preco, qtd, totalItem);
         }
         double desconto = totalProdutos * (percentualDesconto / 100.0);
         double totalPedido = totalProdutos - desconto;

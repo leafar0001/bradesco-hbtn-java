@@ -14,6 +14,6 @@ public class Livro extends Produto {
 
     @Override
     public double obterPrecoLiquido() {
-        return precoBruto * 1.15;
+        return super.getPrecoBruto() * 1.15;
     }
 }
