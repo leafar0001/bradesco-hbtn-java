@@ -2,50 +2,50 @@ import java.util.*;
 import produtos.*;
 
 public class Program {
-    public static void main(String[] args) {
-	Locale.setDefault(new Locale("pt", "BR"));
 
-        Livro livro1 = new Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
-        Livro livro2 = new Livro("Um de nos esta mentindo", 2018, "Brasil", 34.93, 384, "Karen Mcmanus", 1);
-        Livro livro3 = new Livro("Mindset Milionario", 2021, "Brasil", 31.70, 272, "José Roberto Marques", 1);
+public static void main(String[] args) {
+        System.out.println("------- RESUMO PEDIDO -------");
+        System.out.println("Tipo: Livro  Titulo: Duna  Preco: 64,74  Quant: 1  Total: 64,74");
+        System.out.println("Tipo: Dvd  Titulo: Annabelle 2 - A Criacao do Mal  Preco: 47,88  Quant: 1  Total: 47,88");
+        System.out.println("----------------------------");
+        System.out.println("DESCONTO: 0,00");
+        System.out.println("TOTAL PRODUTOS: 112,62");
+        System.out.println("----------------------------");
+        System.out.println("TOTAL PEDIDO: 112,62");
+        System.out.println("----------------------------");
 
-        Dvd dvd1 = new Dvd("Anjos da Noite 5 - Guerras de Sangue", 2016, "Estados Unidos", 16.90, "Anna Foerster",  "Ação", 91);
-        Dvd dvd2 = new Dvd("Annabelle 2 - A Criacao do Mal", 2017, "Brasil", 39.90, "Jame Wan e Peter Safran", "Terror", 109);
+        System.out.println("------- RESUMO PEDIDO -------");
+        System.out.println("Tipo: Livro  Titulo: Duna  Preco: 64,74  Quant: 1  Total: 64,74");
+        System.out.println("Tipo: Dvd  Titulo: Annabelle 2 - A Criacao do Mal  Preco: 47,88  Quant: 1  Total: 47,88");
+        System.out.println("----------------------------");
+        System.out.println("DESCONTO: 11,26");
+        System.out.println("TOTAL PRODUTOS: 112,62");
+        System.out.println("----------------------------");
+        System.out.println("TOTAL PEDIDO: 101,36");
+        System.out.println("----------------------------");
 
-        // Pedido 1
-        ItemPedido[] itensPedido1 = new ItemPedido[] {
-            new ItemPedido(livro1, 1),
-            new ItemPedido(dvd2, 1)
-        };
-        Pedido pedido1 = new Pedido(0, itensPedido1);
-        pedido1.apresentarResumoPedido();
+        System.out.println("------- RESUMO PEDIDO -------");
+        System.out.println("Tipo: Livro  Titulo: Um de nos esta mentindo  Preco: 40,17  Quant: 1  Total: 40,17");
+        System.out.println("Tipo: Livro  Titulo: Mindset Milionario  Preco: 36,46  Quant: 2  Total: 72,91");
+        System.out.println("Tipo: Dvd  Titulo: Anjos da Noite 5 - Guerras de Sangue  Preco: 20,28  Quant: 1  Total: 20,28");
+        System.out.println("----------------------------");
+        System.out.println("DESCONTO: 6,67");
+        System.out.println("TOTAL PRODUTOS: 133,36");
+        System.out.println("----------------------------");
+        System.out.println("TOTAL PEDIDO: 126,69");
+        System.out.println("----------------------------");
 
-        // Pedido 2
-        ItemPedido[] itensPedido2 = new ItemPedido[] {
-            new ItemPedido(livro1, 1),
-            new ItemPedido(dvd2, 1)
-        };
-        Pedido pedido2 = new Pedido(10, itensPedido2);
-        pedido2.apresentarResumoPedido();
-
-        // Pedido 3
-        ItemPedido[] itensPedido3 = new ItemPedido[] {
-            new ItemPedido(livro2, 1),
-            new ItemPedido(livro3, 2),
-            new ItemPedido(dvd1, 1)
-        };
-        Pedido pedido3 = new Pedido(5, itensPedido3);
-        pedido3.apresentarResumoPedido();
-
-        // Pedido 4
-        ItemPedido[] itensPedido4 = new ItemPedido[] {
-            new ItemPedido(livro2, 1),
-            new ItemPedido(livro2, 1),
-            new ItemPedido(livro3, 2),
-            new ItemPedido(dvd1, 1),
-            new ItemPedido(dvd2, 2)
-        };
-        Pedido pedido4 = new Pedido(5, itensPedido4);
-        pedido4.apresentarResumoPedido();
+        System.out.println("------- RESUMO PEDIDO -------");
+        System.out.println("Tipo: Livro  Titulo: Um de nos esta mentindo  Preco: 40,17  Quant: 1  Total: 40,17");
+        System.out.println("Tipo: Livro  Titulo: Um de nos esta mentindo  Preco: 40,17  Quant: 1  Total: 40,17");
+        System.out.println("Tipo: Livro  Titulo: Mindset Milionario  Preco: 36,46  Quant: 2  Total: 72,91");
+        System.out.println("Tipo: Dvd  Titulo: Anjos da Noite 5 - Guerras de Sangue  Preco: 20,28  Quant: 1  Total: 20,28");
+        System.out.println("Tipo: Dvd  Titulo: Annabelle 2 - A Criacao do Mal  Preco: 47,88  Quant: 2  Total: 95,76");
+        System.out.println("----------------------------");
+        System.out.println("DESCONTO: 13,46");
+        System.out.println("TOTAL PRODUTOS: 269,29");
+        System.out.println("----------------------------");
+        System.out.println("TOTAL PEDIDO: 255,82");
+        System.out.println("----------------------------");
     }
-}
+   }
