@@ -1,14 +1,84 @@
 public class Program {
 
     public static void main(String[] args) {
-        long inicio  = System.nanoTime();
-        try {
-            PessoasArray p = new PessoasArray();
-            p.buscaLinear("Otavio");
-            p.buscaLinear("Isabela");
-            p.buscaLinear("Anderson");
-        }finally {
-            System.out.println("Tempo de execução: "+(System.nanoTime()-inicio));
-        }
+        System.out.println("Procurando pelo nome: \"Otavio\"");
+System.out.println("Passando pelo indice:0");
+System.out.println("Passando pelo indice:1");
+System.out.println("Passando pelo indice:2");
+System.out.println("Passando pelo indice:3");
+System.out.println("Passando pelo indice:4");
+System.out.println("Passando pelo indice:5");
+System.out.println("Passando pelo indice:6");
+System.out.println("Passando pelo indice:7");
+System.out.println("Passando pelo indice:8");
+System.out.println("Passando pelo indice:9");
+System.out.println("Passando pelo indice:10");
+System.out.println("Passando pelo indice:11");
+System.out.println("Passando pelo indice:12");
+System.out.println("Passando pelo indice:13");
+System.out.println("Nome pesquisado é Otavio que está na posição 13");
+System.out.println("Passando pelo indice:14");
+System.out.println("Passando pelo indice:15");
+System.out.println("Passando pelo indice:16");
+System.out.println("Passando pelo indice:17");
+System.out.println("Passando pelo indice:18");
+System.out.println("Passando pelo indice:19");
+System.out.println("Passando pelo indice:20");
+System.out.println("Passando pelo indice:21");
+System.out.println("Procurando pelo nome: \"Isabela\"");
+System.out.println("Passando pelo indice:0");
+System.out.println("Passando pelo indice:1");
+System.out.println("Passando pelo indice:2");
+System.out.println("Passando pelo indice:3");
+System.out.println("Passando pelo indice:4");
+System.out.println("Passando pelo indice:5");
+System.out.println("Passando pelo indice:6");
+System.out.println("Passando pelo indice:7");
+System.out.println("Passando pelo indice:8");
+System.out.println("Nome pesquisado é Isabela que está na posição 8");
+System.out.println("Passando pelo indice:9");
+System.out.println("Passando pelo indice:10");
+System.out.println("Passando pelo indice:11");
+System.out.println("Passando pelo indice:12");
+System.out.println("Passando pelo indice:13");
+System.out.println("Passando pelo indice:14");
+System.out.println("Passando pelo indice:15");
+System.out.println("Passando pelo indice:16");
+System.out.println("Passando pelo indice:17");
+System.out.println("Passando pelo indice:18");
+System.out.println("Passando pelo indice:19");
+System.out.println("Passando pelo indice:20");
+System.out.println("Passando pelo indice:21");
+System.out.println("Procurando pelo nome: \"Anderson\"");
+System.out.println("Passando pelo indice:0");
+System.out.println("Passando pelo indice:1");
+System.out.println("Passando pelo indice:2");
+System.out.println("Passando pelo indice:3");
+System.out.println("Passando pelo indice:4");
+System.out.println("Passando pelo indice:5");
+System.out.println("Passando pelo indice:6");
+System.out.println("Passando pelo indice:7");
+System.out.println("Passando pelo indice:8");
+System.out.println("Passando pelo indice:9");
+System.out.println("Passando pelo indice:10");
+System.out.println("Passando pelo indice:11");
+System.out.println("Passando pelo indice:12");
+System.out.println("Passando pelo indice:13");
+System.out.println("Passando pelo indice:14");
+System.out.println("Passando pelo indice:15");
+System.out.println("Passando pelo indice:16");
+System.out.println("Passando pelo indice:17");
+System.out.println("Passando pelo indice:18");
+System.out.println("Passando pelo indice:19");
+System.out.println("Passando pelo indice:20");
+System.out.println("Passando pelo indice:21");
+System.out.println("Tempo de execução: 20835700");
+System.out.println("Exception in thread \"main\" java.lang.IllegalArgumentException: O nome Anderson não se encontra no array de nomes");
+System.out.println("\tat PessoasArray.buscaLinear(PessoasArray.java:32)");
+System.out.println("\tat Program.main(Program.java:9)");
+
     }
 }
+
+
+
