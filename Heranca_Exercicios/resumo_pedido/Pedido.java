@@ -1,6 +1,7 @@
 import produtos.Produto;
 import produtos.Livro;
 import produtos.Dvd;
+import java.util.Locale;
 
 public class Pedido {
     private double percentualDesconto;
@@ -25,17 +26,18 @@ public class Pedido {
         System.out.println("------- RESUMO PEDIDO -------");
         for (ItemPedido item : itens) {
             Produto p = item.getProduto();
-            double preco = p.obterPrecoLiquido();
+            double preco = Math.round(p.obterPrecoLiquido() * 100.0) / 100.0;
             int qtd = item.getQuantidade();
-            double totalItem = preco * qtd;
+            double totalItem = Math.round(preco * qtd * 100.0) / 100.0;
             totalProdutos += totalItem;
 
             String tipo = (p instanceof Livro) ? "Livro" : (p instanceof Dvd ? "Dvd" : "Produto");
             System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f\n",
                     tipo, p.getTitulo(), preco, qtd, totalItem);
         }
-        double desconto = totalProdutos * (percentualDesconto / 100.0);
-        double totalPedido = totalProdutos - desconto;
+        totalProdutos = Math.round(totalProdutos * 100.0) / 100.0;
+        double desconto = Math.round(totalProdutos * percentualDesconto / 100.0 * 100.0) / 100.0;
+        double totalPedido = Math.round((totalProdutos - desconto) * 100.0) / 100.0;
         System.out.println("----------------------------");
         System.out.printf("DESCONTO: %.2f\n", desconto);
         System.out.printf("TOTAL PRODUTOS: %.2f\n", totalProdutos);
