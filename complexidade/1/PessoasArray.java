@@ -32,3 +32,5 @@ public class PessoasArray {
         throw new IllegalArgumentException("Nome " + nome + " não encontrado na lista.");
     }
 }
+//if \(nomes\[i\] == \w+\)
+//if (nomes[i] == null)
