@@ -1,24 +1,14 @@
 public class Program {
 
     public static void main(String[] args) {
-        PessoasArray p = new PessoasArray();
-
+        long inicio  = System.nanoTime();
         try {
+            PessoasArray p = new PessoasArray();
             p.buscaLinear("Otavio");
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-
-        try {
             p.buscaLinear("Isabela");
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-
-        try {
             p.buscaLinear("Anderson");
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+        }finally {
+            System.out.println("Tempo de execução: "+(System.nanoTime()-inicio));
         }
     }
 }
