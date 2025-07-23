@@ -20,7 +20,8 @@ public class PessoasArray {
     public void buscaLinear(String nome){
         if (nome == null) {
             throw new IllegalArgumentException("O nome fornecido é nulo.");
-        }
+        } 
+System.out.println("Procurando pelo nome: \"" + nome + "\"");
 
         for (int i = 0; i < nomes.length; i++) {
 		System.out.println("Passando pelo indice:" + i);
