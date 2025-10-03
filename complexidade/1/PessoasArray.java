@@ -27,7 +27,6 @@ public class PessoasArray {
             if (nomes[i].equals(nome)) {
                 System.out.println("Nome pesquisado é " + nome + " que está na posição " + i);
                 encontrado = true;
-                break; // interrompe a busca ao encontrar
             }
         }
 
