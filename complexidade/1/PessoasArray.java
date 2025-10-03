@@ -1,7 +1,5 @@
 public class PessoasArray {
-
     private String[] nomes;
-
     public PessoasArray() {
         nomes = new String[]{"Amanda", "Beatriz", "Carlos", "Daniela", "Eduardo",
                 "Fabio", "Gustavo", "Hingrid", "Isabela", "Joao", "Leise", "Maria",
