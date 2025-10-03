@@ -16,18 +16,18 @@ import java.util.*;
             List<Pessoa> todasPessoas = List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa5,
                 pessoa6, pessoa7, pessoa8, pessoa9, pessoa10);
 
-            Map<String, List<Integer>> idadesPorCargo1 = ConsultaPessoas.obterIdadePorCargo(todasPessoas);
-            Map<String, List<Integer>> idadesPorCargo2 = ConsultaPessoas.obterIdadePorCargo(
+            Map<String, List<Pessoa>> pessoas1 = ConsultaPessoas.obterPessoasPorCargoAcimaDe40anos(todasPessoas);
+            Map<String, List<Pessoa>> pessoas2 = ConsultaPessoas.obterPessoasPorCargoAcimaDe40anos(
                 List.of(pessoa1, pessoa4, pessoa10)
             );
-            Map<String, List<Integer>> idadesPorCargo3 = ConsultaPessoas.obterIdadePorCargo(
+            Map<String, List<Pessoa>> pessoas3 = ConsultaPessoas.obterPessoasPorCargoAcimaDe40anos(
                 List.of(pessoa4, pessoa9)
             );
 
-            System.out.println(idadesPorCargo1);
+            System.out.println(pessoas1);
             System.out.println();
-            System.out.println(idadesPorCargo2);
+            System.out.println(pessoas2);
             System.out.println();
-            System.out.println(idadesPorCargo3);
+            System.out.println(pessoas3);
         }
     }
