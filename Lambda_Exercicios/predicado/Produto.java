@@ -13,18 +13,14 @@ public class Produto {
         this.tipo = tipo;
     }
 
-    // Getters
     public String getNome() { return nome; }
     public double getPreco() { return preco; }
     public double getPeso() { return peso; }
     public int getQuantidadeEmEstoque() { return quantidadeEmEstoque; }
     public TiposProduto getTipo() { return tipo; }
 
-
-@Override
-public String toString() {
-    return String.format("%s %.6f %.6f %d %s", 
-        nome, preco, peso, quantidadeEmEstoque, tipo);
-}
-
+    @Override
+    public String toString() {
+        return String.format("%s %.6f %.6f %d %s", nome, preco, peso, quantidadeEmEstoque, tipo);
+    }
 }
