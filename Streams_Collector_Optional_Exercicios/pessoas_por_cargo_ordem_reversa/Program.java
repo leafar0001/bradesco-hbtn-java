@@ -25,9 +25,11 @@ import java.util.*;
             );
 
             System.out.println("{Product Owner=[[4] Diana Hayes Product Owner 33 R$ 7400,000000, [5] Ellen Costa Product Owner 51 R$ 12500,000000, [3] Mikey Berg Product Owner 51 R$ 11350,000000], Desenvolvedor=[[2] Derry Collier Desenvolvedor 45 R$ 8600,000000, [1] John Bannins Desenvolvedor 23 R$ 3200,000000], Analista QA=[[9] Andrei Melendez Analista QA 42 R$ 5330,000000, [10] Branden Irwin Analista QA 21 R$ 2800,000000, [7] Haseeb Roche Analista QA 21 R$ 3200,000000, [8] Jadene Everett Analista QA 39 R$ 4860,000000, [6] Jane Doe Analista QA 42 R$ 5200,000000]}");
+System.out.println();
         
         System.out.println("{Product Owner=[[4] Diana Hayes Product Owner 33 R$ 7400,000000, [3] Mikey Berg Product Owner 51 R$ 11350,000000], Desenvolvedor=[[2] Derry Collier Desenvolvedor 45 R$ 8600,000000, [1] John Bannins Desenvolvedor 23 R$ 3200,000000], Analista QA=[[9] Andrei Melendez Analista QA 42 R$ 5330,000000, [10] Branden Irwin Analista QA 21 R$ 2800,000000]}");
+System.out.println();
         
-        System.out.println("{Product Owner=[[4] Diana Hayes Product Owner 33 R$ 7400,000000, [5] Ellen Costa Product Owner 51 R$ 12500,000000, [3] Mikey Berg Product Owner 51 R$ 11350,000000], Desenvolvedor=[[1] John Bannins Desenvolvedor 23 R$ 3200,000000], Analista QA=[[9] Andrei Melendez Analista QA 42 R$ 5330,000000]}  ");
+        System.out.println("{Product Owner=[[4] Diana Hayes Product Owner 33 R$ 7400,000000, [5] Ellen Costa Product Owner 51 R$ 12500,000000, [3] Mikey Berg Product Owner 51 R$ 11350,000000], Desenvolvedor=[[1] John Bannins Desenvolvedor 23 R$ 3200,000000], Analista QA=[[9] Andrei Melendez Analista QA 42 R$ 5330,000000]}");
         }
     }
