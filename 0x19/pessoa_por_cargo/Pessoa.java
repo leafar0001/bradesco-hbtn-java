@@ -23,14 +23,9 @@ class Pessoa {
 
     @Override
     public String toString() {
-        return "[" + codigo + "] " + nome + " " + cargo + " " + idade + " R$ " + salario;
+        // Formata com 6 casas decimais e substitui o ponto por vírgula
+        String salarioFormatado = String.format("%.6f", salario).replace('.', ',');
+        return "[" + codigo + "] " + nome + " " + cargo + " " + idade + " R$ " + salarioFormatado;
     }
 }
 
-// Classe ConsultaPessoas
-class ConsultaPessoas {
-    public static Map<String, List<Pessoa>> obterPessoasPorCargo(List<Pessoa> pessoas) {
-        return pessoas.stream()
-                      .collect(Collectors.groupingBy(Pessoa::getCargo));
-    }
-}
