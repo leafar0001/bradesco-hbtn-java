@@ -20,6 +20,10 @@ class Pessoa implements Comparable<Pessoa> {
         return cargo;
     }
 
+   public int getIdade() {   
+        return idade;
+    }
+
     @Override
     public int compareTo(Pessoa outra) {
         // Ordena pelo código, conforme a saída desejada
