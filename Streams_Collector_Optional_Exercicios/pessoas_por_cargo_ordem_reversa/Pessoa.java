@@ -1,7 +1,6 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Classe Pessoa
 class Pessoa implements Comparable<Pessoa> {
     private int codigo;
     private String nome;
@@ -23,7 +22,7 @@ class Pessoa implements Comparable<Pessoa> {
 
     @Override
     public int compareTo(Pessoa outra) {
-        // Ordena por código (ou qualquer critério desejado)
+        // Ordena pelo código, conforme a saída desejada
         return Integer.compare(this.codigo, outra.codigo);
     }
 
