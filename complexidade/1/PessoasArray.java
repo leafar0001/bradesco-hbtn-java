@@ -3,10 +3,10 @@ public class PessoasArray {
     private String[] nomes;
 
     public PessoasArray() {
-        nomes = new String[]{"Amanda", "Beatriz", "Carlos","Daniela","Eduardo",
-                "Fabio","Gustavo", "Hingrid","Isabela","Joao","Leise","Maria",
-                "Norberto","Otavio","Paulo", "Quirino","Renata","Sabata",
-                "Tais","Umberto","Vanessa","Xavier"};
+        nomes = new String[]{"Amanda", "Beatriz", "Carlos", "Daniela", "Eduardo",
+                "Fabio", "Gustavo", "Hingrid", "Isabela", "Joao", "Leise", "Maria",
+                "Norberto", "Otavio", "Paulo", "Quirino", "Renata", "Sabata",
+                "Tais", "Umberto", "Vanessa", "Xavier"};
     }
 
     public String[] getNomes() {
@@ -17,21 +17,22 @@ public class PessoasArray {
         this.nomes = nomes;
     }
 
-    public void buscaLinear(String nome){
-        if (nome == null) {
-            throw new IllegalArgumentException("O nome fornecido é nulo.");
-        } 
-System.out.println("Procurando pelo nome: \"" + nome + "\"");
+    // Implementação da busca linear - O(n)
+    public void buscaLinear(String nome) {
+        System.out.println("Procurando pelo nome: \"" + nome + "\"");
         boolean encontrado = false;
 
         for (int i = 0; i < nomes.length; i++) {
-		System.out.println("Passando pelo indice:" + i);
-            if (nomes[i] != null && nomes[i].equalsIgnoreCase(nome.trim())) {
+            System.out.println("Passando pelo indice:" + i);
+            if (nomes[i].equals(nome)) {
                 System.out.println("Nome pesquisado é " + nome + " que está na posição " + i);
-                encontrado = true;            }
-	
+                encontrado = true;
+                break; // interrompe a busca ao encontrar
+            }
+        }
+
+        if (!encontrado) {
+            throw new IllegalArgumentException("O nome " + nome + " não se encontra no array de nomes");
         }
     }
 }
-//if \(nomes\[i\] == \w+\)
-//if (nomes[i] == null)
